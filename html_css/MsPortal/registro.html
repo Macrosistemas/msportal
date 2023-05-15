@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio de Sesión</title>
+    <title>Document</title>
     <script defer src="../WebMacro/js/scripts.js"></script>
 <link href="css/styles.css" rel="stylesheet">
 </head>
-    <body>
-        <header>
+<body>
 
+        <header>
             <nav class="navbar-ini">
                 <ul class="nav navbar-nav navbar-right">
                     <li><div><img src="./public/img/logomsCom.png" height="40px"></div></li>
@@ -27,18 +27,28 @@
                     <img src="./public/vital.png" alt="Logo de la empresa">
                 </div>
                 <div class="formulario">
-                    <h2>Iniciar sesión</h2>
+                    <h2>Registrarse</h2>
                     <form>
-                        <label for="usuario">Usuario:</label>
+                        <label for="nombre">Nombre y Apellido:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+    
+                        <label for="apellido">Nombre de Usuario:</label>
                         <input type="text" id="usuario" name="usuario" required>
+    
+                        <label for="email">Correo electrónico:</label>
+                        <input type="email" id="email" name="email" required>
     
                         <label for="contrasena">Contraseña:</label>
                         <input type="password" id="contrasena" name="contrasena" required>
     
-                        <input type="submit" value="Iniciar sesión">
+                        <label for="confirmar-contrasena">Confirmar contraseña:</label>
+                        <input type="password" id="confirmar-contrasena" name="confirmar-contrasena" required>
+    
+                        <input type="submit" value="Registrarse">
                     </form>
                 </div>
             </div>
         </main>
-</body>
-</html>
+    </body>
+    </html>
+    
