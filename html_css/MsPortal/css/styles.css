@@ -80,15 +80,7 @@
       color: black;
     }
 
-    /*nav bar inicio sesión inicio
-    .nav-session {
-      background-color: #2f6178;
-      display: flex;
-      position: fixed;
-      width: 100%;
-      justify-content: space-between
-    }*/
-    /*nav bar inicio sesión fin*/
+    
     /*MENU VERTICAL */
     @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 
@@ -222,6 +214,7 @@
     }
 
     .sidebar.close~.navbar,
+    .sidebar.close~.navbar2,
     .sidebar.close~.main,
     .sidebar.close~.footer{
       left: 0;
@@ -229,7 +222,6 @@
     }
 
     .navbar-ini {
- 
       width: 100%;
       background-color: #2f6178;
       padding-bottom: 11.5px;
@@ -250,10 +242,7 @@
       cursor: pointer;
     }
 
-    .navbar2 #sidebar-close {
-      cursor: pointer;
-    }
-
+    
     /*nav bar 2 inicio*/
     .navbar2 {
       display: flex;
@@ -262,27 +251,13 @@
       width: calc(100% - 260px);
       transition: all 0.5s ease;
       z-index: 1000;
-    }
-
-    .sidebar.close~.navbar2 {
-      left: 0;
-      width: 100%;
-    }
-
-    .navbar2 {
       position: fixed;
       color: black;
       padding: 15px 20px;
       font-size: 20px;
-      margin-top: 1%;
+      margin-top: 58px;
       background: whitesmoke;
-
     }
-
-    .navbar2 #sidebar-close {
-      cursor: pointer;
-    }
-
     /*nav bar 2 fin*/
 
 
@@ -375,7 +350,7 @@
     }
 
     a {
-      color: #ffffff;
+      color: #0056b3;
       text-decoration: none;
       background-color: transparent;
     }
@@ -1197,159 +1172,21 @@
   color: black;
 }
 
-
-
- /*MENU VERTICAL */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
-
-ul {
-  list-style-type: none;
-}
-.navbar-right {
-  float: right;
-  margin-right: -15px;
-}
-.navbar-right > a{
-  color: #FFF;
-  font-size: 17px;
-}
-
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
-.sidebar {
-  position: fixed;
-  height: 100%;
-  width: 260px;
-  background: #11101d;
-  padding: 15px;
-  z-index: 99;
-}
-.logo {
-  font-size: 25px;
-  padding: 0 15px;
-}
-.sidebar a {
-  color: #fff;
-  text-decoration: none;
-}
-.menu-content {
+/*PERMISOS*/
+#permiso{
   position: relative;
-  height: 100%;
-  width: 100%;
-  margin-top: 40px;
-  overflow-y: scroll;
+  margin-top: 0%;
 }
-.menu-content::-webkit-scrollbar {
-  display: none;
-}
-.menu-items {
-  height: 100%;
-  width: 100%;
-  list-style: none;
-  transition: all 0.4s ease;
-}
-.submenu-active .menu-items {
-  transform: translateX(-56%);
-}
-.menu-title {
-  color: #fff;
-  font-size: 14px;
-  padding: 15px 20px;
-}
-.item a,
-.submenu-item {
-  padding: 16px;
-  display: inline-block;
-  width: 100%;
-  border-radius: 12px;
-}
-.item i {
-  font-size: 12px;
-}
-.item a:hover,
-.submenu-item:hover,
-.submenu .menu-title:hover {
-  background: rgba(255, 255, 255, 0.1);
-}
-.submenu-item {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: #fff;
-  cursor: pointer;
-}
-.submenu {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  right: calc(-100% - 26px);
-  height: calc(100% + 100vh);
-  background: #11101d;
-  display: none;
-}
-.show-submenu ~ .submenu {
-  display: block;
-}
-.submenu .menu-title {
-  border-radius: 12px;
-  cursor: pointer;
-}
-.submenu .menu-title i {
-  margin-right: 10px;
-}
-.navbar,
-.main ,
-.footer{
-  left: 260px;
-  width: calc(100% - 260px);
-  transition: all 0.5s ease;
-  z-index: 1000;
-}
-.sidebar.close ~ .navbar,
-.sidebar.close ~ .main,
-.sidebar.close ~ .footer{
-  left: 0;
-  width: 100%;
+#estado{
+  padding-left: 15‒;
+  border-left-width: 1px;
+  margin-left: 100px;
 }
 
-.navbar {
-  position: fixed;
-  color: #fff;
-  padding: 15px 20px;
-  font-size: 25px;
-  background: #2f6178;
-  cursor: pointer;
+section{
+  width: 1500px;
+  height: 19px;
+  padding-top: -20;
+  margin-top: -150px;
 }
-.navbar #sidebar-close {
-  cursor: pointer;
-}
-.main {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  z-index: 100;
-  background: #FFF;
-}
-.main h1 {
-  color: #11101d;
-  font-size: 40px;
-  text-align: center;
-}
-/*FIN MENU*/
-
-.footer {
-  position: relative;
-  display: flex;
-  text-align:center; 
-  justify-content: center;
-  z-index: 100;
-  background: #FFF;
-}
+/*FIN PERMISOS*/
