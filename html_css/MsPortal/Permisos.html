@@ -146,21 +146,24 @@
     </nav>
 
     <main class="main">
-      <section>
-        <select name="permisos" id="permisos">
-          <option value="volvo">Volvo</option>
-          <option value="saab">Saab</option>
-          <option value="mercedes">Mercedes</option>
-          <option value="audi">Audi</option>
-        </select>
-  
-        <select name="estado" id="estado">
-          <option value="volvo">Volvo</option>
-          <option value="saab">Saab</option>
-          <option value="mercedes">Mercedes</option>
-          <option value="audi">Audi</option>
-        </select>
+       <section class="top">
+        <a class="permisoPer"> Permisos: 
+          <select name="permisos" id="permisos">
+            <option value="alta">Alta</option>
+            <option value="baja">Baja</option>
+            <option value="editar">Editar</option>
+            <option value="consulta">Consultar</option>
+          </select>
+        </a>
+        <a class="estadoPer">Estados: 
+          <select name="estado" id="estado">
+            <option value="activo">Activos</option>
+            <option value="inactivo">Inactivos</option>
+          </select>
+        </a>
       </section>
+      
+        
     </main>
     <footer class="footer">
       <small style=" display: inline-block">

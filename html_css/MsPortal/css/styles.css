@@ -318,14 +318,7 @@
       overflow: visible;
     }
 
-    h2,
-    h3,
-    h4,
-    h5 {
-      margin-top: 0;
-      margin-bottom: .5rem;
-    }
-
+    
     p {
       margin-top: 0;
       margin-bottom: 1rem;
@@ -349,7 +342,7 @@
       font-weight: bolder;
     }
 
-    a {
+    /*a {
       color: #0056b3;
       text-decoration: none;
       background-color: transparent;
@@ -358,7 +351,7 @@
     a:hover {
       color: #0056b3;
       text-decoration: underline;
-    }
+    }*/
 
     table {
       border-collapse: collapse;
@@ -379,10 +372,6 @@
       font-family: inherit;
       font-size: inherit;
       line-height: inherit;
-    }
-
-    button,
-    input {
       overflow: visible;
     }
 
@@ -399,6 +388,7 @@
     h3,
     h4,
     h5 {
+      margin-top: 0;
       margin-bottom: .5rem;
       font-weight: 500;
       line-height: 1.2;
@@ -1150,27 +1140,6 @@
 }
 
     /*LOGIN*/
-.h-custom{
-  flex-direction: row;
-  justify-content: space-between;
-}
-.container {
-  text-align:left; /* necesario para la class .center */
-}
-.container:after {
-  content: "";
-  display: table;
-  clear: both;
-  margin: 0 auto;
-}
-.left {
-  float: left;
-}
-.center {
-  margin: 0 auto;
-  display: inline-block;
-  color: black;
-}
 
 /*PERMISOS*/
 #permiso{
@@ -1180,10 +1149,13 @@
 #estado{
   padding-left: 15‒;
   border-left-width: 1px;
-  margin-left: 100px;
-}
+ }
 
-section{
+ a .estadoPer{
+  margin-left: 25px;
+ }
+ 
+section .top{
   width: 1500px;
   height: 19px;
   padding-top: -20;
