@@ -6,13 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Carrito</title>
+    <link rel="shortcut icon" href="./public/logoms.ico">
     <link href="../MsPortal/css/styles.css" rel="stylesheet" type="text/css">
     <!-- Fontawesome CDN Link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
   </head>
   <body>
     <nav class="sidebar">
-      <a href="#" class="logo">CloudMG</a>
+      <img src="./public/img/logomsCom.png" height="45px">
 
       <div class="menu-content">
         <ul class="menu-items">
@@ -21,26 +22,41 @@
           <li class="item">
             <a href="#">Pedidos</a>
           </li>
-
           <li class="item">
             <div class="submenu-item">
-              <span>Permisos</span>
+              <span>Administrador</span>
               <i class="fa-solid fa-chevron-right"></i>
             </div>
 
             <ul class="menu-items submenu">
               <div class="menu-title">
                 <i class="fa-solid fa-chevron-left"></i>
-                Configuración
+                Atras
               </div>
-              <li class="item">
-                <a href="#">First sublink</a>
+              <li class="item"> 
+                <a href="administrar_cuit.html">CUIT</a>
+              </li>
+            </ul>
+          </li>
+          <li class="item">
+            <div class="submenu-item">
+              <span>Seguridad</span>
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+
+            <ul class="menu-items submenu">
+              <div class="menu-title">
+                <i class="fa-solid fa-chevron-left"></i>
+                Atras
+              </div>
+              <li class="item"> 
+                <a href="permisos.html">Permisos</a>
               </li>
               <li class="item">
-                <a href="#">First sublink</a>
+                <a href="roles.html">Roles</a>
               </li>
               <li class="item">
-                <a href="#">First sublink</a>
+                <a href="permisosRoles.html">Permisos por Roles</a>
               </li>
             </ul>
           </li>
@@ -131,7 +147,6 @@
         </ul>
       </div>
     </nav>
-
     <nav class="navbar">
       <i class="fa-solid fa-bars" id="sidebar-close"></i>
       <ul class="nav navbar-nav navbar-right">
@@ -139,15 +154,13 @@
         <a href="#"><i class="fa-regular fa-user"></i> Logout</a>
       </ul>
     </nav>
-
-    <nav class="navbar2">
+    <nav class="navbar2" >
       <img class="imagen_logo" src="./public/vital.png" alt="Logo de la empresa" height="60px">
       <ul class="nav navbar-nav navbar-right">
-        
         <h4>Permisos</h4>
       </ul>
     </nav>
-    
+
     <main class="main">
       
       

@@ -6,13 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Permisos</title>
+    <link rel="shortcut icon" href="./public/logoms.ico">
     <link href="../MsPortal/css/styles.css" rel="stylesheet" type="text/css">
+    <link href="../MsPortal/css/tablas.css" rel="stylesheet" type="text/css">
     <!-- Fontawesome CDN Link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
   </head>
   <body>
     <nav class="sidebar">
-      <a href="#" class="logo">CloudMG</a>
+      <img src="./public/img/logomsCom.png" height="45px">
 
       <div class="menu-content">
         <ul class="menu-items">
@@ -21,13 +23,27 @@
           <li class="item">
             <a href="#">Pedidos</a>
           </li>
+          <li class="item">
+            <div class="submenu-item">
+              <span>Administrador</span>
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
 
+            <ul class="menu-items submenu">
+              <div class="menu-title">
+                <i class="fa-solid fa-chevron-left"></i>
+                Atras
+              </div>
+              <li class="item"> 
+                <a href="administrar_cuit.html">Empresas</a>
+              </li>
+            </ul>
+          </li>
           <li class="item">
             <div class="submenu-item">
               <span>Seguridad</span>
               <i class="fa-solid fa-chevron-right"></i>
             </div>
-
             <ul class="menu-items submenu">
               <div class="menu-title">
                 <i class="fa-solid fa-chevron-left"></i>
@@ -44,6 +60,7 @@
               </li>
             </ul>
           </li>
+          
           <li class="item">
             <div class="submenu-item">
               <span>Second submenu</span>
@@ -55,36 +72,6 @@
                 <i class="fa-solid fa-chevron-left"></i>
                 Your submenu title
               </div>
-              <li class="item">
-                <a href="#">Second sublink</a>
-              </li>
-              <li class="item">
-                <a href="#">Second sublink</a>
-              </li>
-              <li class="item">
-                <a href="#">Second sublink</a>
-              </li>
-              <li class="item">
-                <a href="#">Second sublink</a>
-              </li>
-              <li class="item">
-                <a href="#">Second sublink</a>
-              </li>
-              <li class="item">
-                <a href="#">Second sublink</a>
-              </li>
-              <li class="item">
-                <a href="#">Second sublink</a>
-              </li>
-              <li class="item">
-                <a href="#">Second sublink</a>
-              </li>
-              <li class="item">
-                <a href="#">Second sublink</a>
-              </li>
-              <li class="item">
-                <a href="#">Second sublink</a>
-              </li>
               <li class="item">
                 <a href="#">Second sublink</a>
               </li>
@@ -146,25 +133,57 @@
     </nav>
 
     <main class="main">
-       <section class="top">
-        <a class="permisoPer"> Permisos: 
-          <select name="permisos" id="permisos">
-            <option value="alta">Alta</option>
-            <option value="baja">Baja</option>
-            <option value="editar">Editar</option>
-            <option value="consulta">Consultar</option>
-          </select>
-        </a>
-        <a class="estadoPer">Estados: 
-          <select name="estado" id="estado">
-            <option value="activo">Activos</option>
-            <option value="inactivo">Inactivos</option>
-          </select>
-        </a>
+      <section class="section-table"> 
+        <section class="top">
+          <a class="permisoPer"> Permisos: 
+            <select name="permisos" id="permisos">
+              <option value="alta">Alta</option>
+              <option value="baja">Baja</option>
+              <option value="editar">Editar</option>
+              <option value="consulta">Consultar</option>
+            </select>
+          </a>
+          <a class="estadoPer">Estados: 
+            <select name="estado" id="estado">
+              <option value="activo">Activos</option>
+              <option value="inactivo">Inactivos</option>
+            </select>
+          </a>
+        </section>
+        <section class="down" >
+          <table class="table">
+            <thead>
+              <tr>
+                <th> Lunes </th>
+                <th> Martes </th>
+                <th> Miércoles </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td> Matemática  </td>
+                <td> Ciencias </td>
+                <td> Matemática </td>
+              </tr>
+              <tr>
+                <td> Inglés </td>
+                <td> Comunicación </td>
+                <td> Biologia </td>
+              </tr>
+              <tr>
+                <td> Computación </td>
+                <td> Historia </td>
+                <td> Economia </td>
+               </tr>
+            </tbody>
+            <tfoot>
+  
+            </tfoot>
+          </table>
+        </section>
       </section>
       
-        
-    </main>
+</main>
     <footer class="footer">
       <small style=" display: inline-block">
         © 2023 made with
