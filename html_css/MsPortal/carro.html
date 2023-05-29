@@ -6,13 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Carrito</title>
-    <link href="../MsPortal/css/styles.css" rel="stylesheet" type="text/css">
-    <!-- Fontawesome CDN Link -->
+    <link rel="shortcut icon" href="./public/logoms.ico">
+    <link href="../MsPortal/css/styles_ni.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
   </head>
   <body>
     <nav class="sidebar">
-      <a href="#" class="logo">CloudMG</a>
+      <img src="./public/img/logomsCom.png" height="45px">
 
       <div class="menu-content">
         <ul class="menu-items">
@@ -135,16 +135,66 @@
     <nav class="navbar">
       <i class="fa-solid fa-bars" id="sidebar-close"></i>
       <ul class="nav navbar-nav navbar-right">
-        <a href="#"><i class="fa-solid fa-user"></i> Sign in</a>
+        <!--<i class="fa-solid fa-user" id="openModal"></i> Sign in</a>-->
+        <img class="imagen_perfil" src="./public/hora.png" alt="Imagen de perfil" height="32px" id="openModal">
+        <!--<img class="imagen_perfil" src="./public/hora.png" alt="Imagen de perfil" height="30px">-->
+        <!--<button id="openModal">Abrir modal</button>-->
+
+        <div id="modal" class="modal">
+
+            <article class="modal-content">
+              
+              
+                <article class="modal-inside">
+                  <span id="closeModal" class="close">&times;</span>  
+                  <br>
+                  <img class="imagen_perfil" src="./public/hora.png" alt="Imagen de perfil" height="120px" width="120px">
+
+                  <h2>Horacio Perucca</h2>
+                  <hr style="color:gray">
+                    <div class="info-perfil">
+                      <div class="info-perfil-inside">
+                        <h3>Nombre de Usuario</h3>
+                        <hr>
+                         <input type="text" class="info-perfil-inside-input" placeholder="Nombre de Usuario">                      
+                      </div>
+                      <hr>
+                      <div class="info-perfil-inside">
+                      <h3>Nombre y Apellido</h3>
+                      <input type="text" class="info-perfil-inside-input" placeholder="Nombre y Apellido">
+                      </div>
+                      <hr>
+                      <div class="info-perfil-inside">
+                        <h3>Cumpleaños</h3>
+                        <input type="date" class="info-perfil-inside-input" placeholder="Fecha de Nacimiento">
+                      </div>
+                      <hr>
+                      <div class="info-perfil-inside">
+                        <h3>Email</h3>
+                        <input type="email" class="info-perfil-inside-input" placeholder="Nombre de Usuario">
+                      </div>
+                      <hr>
+                      <div class="info-perfil-inside">
+                        <h3>Ubicación</h3>
+
+                      <input type="text" class="info-perfil-inside-input" placeholder="Localidad">
+                      </div>
+
+                    </div>
+                </article>
+            </article>
+        </div>
+
+
         <a href="#"><i class="fa-regular fa-user"></i> Logout</a>
       </ul>
-      <nav class="navbar2">
-        <img class="imagen_logo" src="./public/vital.png" alt="Logo de la empresa" height="60px">
-        <ul class="nav navbar-nav navbar-right">
-          
-          <h4>Carrito de Compras</h4>
-        </ul>
-      </nav>
+    </nav>
+
+    <nav class="navbar2">
+      <img class="imagen_logo" src="./public/vital.png" alt="Logo de la empresa" height="60px">
+      <ul class="nav navbar-nav navbar-right">
+        <h4>Carrito de Compras</h4>
+      </ul>
     </nav>
     
     <main class="main">
@@ -172,27 +222,16 @@
                                 <tr>
                                     <td width="90">
                                         <div class="cart-product-imitation">
-                                          <img class="imagen_logo" src="./public/comida.png" alt="Logo de la empresa" height="90px">
+                                          <img class="imagen_logo" src="./public/comida.png" alt="Logo de la empresa" height="50px">
                                         </div>
                                     </td>
                                     <td class="desc">
-                                        <h3>
-                                            <a href="#" class="text-navy">
+                                        <h3 id="openModal-art">
+                                            <a href="#" class="text-navy" >
                                               Alimento Dogpro para perro adulto todos los tamaños sabor mix en bolsa de 20 kg
                                             </a>
                                         </h3>
-                                        <p class="small">
-                                          Tu mascota siempre saludable
-                                          Ellos son parte de la familia y nos regalan su compañía y su cariño. Para que se mantengan sanos y fuertes, una alimentación balanceada es esencial. Brindale a tu perro los nutrientes que necesita para que pueda correr, saltar y jugar todo el día.
-                                        </p>
-                                        <dl class="small m-b-none">
-                                          <dt>Formas de envío</dt>
-                                          <dd>Los medios de envíos a acordar con vendeder.</dd>
-                                        </dl>
-
-                                        <div class="m-t-sm">
-                                          <a href="#" class="text-muted"><i class="fa fa-gift"></i> Agregar descuento</a>
-                                          |
+                                       
                                           <a href="#" class="text-muted"><i class="fa fa-trash"></i> Eliminar item</a>
                                         </div>
                                     </td>
@@ -213,8 +252,36 @@
                                 </tbody>
                             </table>
                         </div>
-
                     </div>
+
+                    <div class="modal-art" id="modal-art">
+                      <div class="modal-content-art">
+                        <img class="imagen_logo" src="./public/comida2.png" alt="Logo de la empresa" height="200px">
+                        
+                        <div>
+                          <h2>Alimento Dogpro para perro adulto todos los tamaños sabor mix en bolsa de 20 kg</h2>
+                          <hr>
+                          <input type="checkbox" class="forms-control">20kg
+                          <input type="checkbox" class="forms-control">10kg
+                          <input type="checkbox" class="forms-control">5kg
+                          <hr>
+                          <p>Es una tecnología exclusiva, formulada con una novedosa mezcla de aminoácidos, antioxidantes naturales, vitaminas del complejo B y omega 3 y 6, para ayudar a proteger y mantener la actividad cerebral y retrasar los signos del envejecimiento de tu gato.</p>
+                          <hr>
+                          <span>Precio</span>
+                          <h2 class="font-bold">
+                             $15000,00
+                          </h2>
+                          <div class="m-t-sm">
+                            <div class="btn-group">
+                            <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-shopping-cart"></i> Agregar al Carrito </a>
+                            <a href="#" id="closeModal-art" class="btn btn-white btn-sm" > Cancelar</a>
+                            </div>
+                        </div>
+                        </div>
+                        <span id="closeModal-art" class="close">&times;</span>
+                      </div>
+                    </div>
+
                     <div class="ibox-content">
                         <div class="table-responsive">
                             <table class="table shoping-cart-table">
@@ -223,7 +290,7 @@
                                 <tr>
                                     <td width="90">
                                         <div class="cart-product-imitation">
-                                          <img class="imagen_logo" src="./public/comida.png" alt="Logo de la empresa" height="90px">
+                                          <img class="imagen_logo" src="./public/comida.png" alt="Logo de la empresa" height="50px">
                                         </div>
                                     </td>
                                     <td class="desc">
@@ -232,18 +299,7 @@
                                               Proplan Pouch Adult Cat Salmon 85grs Caja X 15 Unidades
                                             </a>
                                         </h3>
-                                        <p class="small">
-                                          La selección de un alimento adecuado para tu mascota es muy importante para garantizar su crecimiento, desarrollo y salud. Con esta opción de Maintenance Criadores podrás cubrir las necesidades nutricionales y energéticas de tu perro.
 
-                                        </p>
-                                        <dl class="small m-b-none">
-                                            <dt>Formas de envío</dt>
-                                            <dd>Los medios de envíos a acordar con vendeder.</dd>
-                                        </dl>
-
-                                        <div class="m-t-sm">
-                                          <a href="#" class="text-muted"><i class="fa fa-gift"></i> Agregar descuento</a>
-                                          |
                                           <a href="#" class="text-muted"><i class="fa fa-trash"></i> Eliminar item</a>
                                         </div>
                                     </td>
@@ -274,7 +330,7 @@
                                 <tr>
                                     <td width="90">
                                         <div class="cart-product-imitation">
-                                          <img class="imagen_logo" src="./public/comida.png" alt="Logo de la empresa" height="90px">
+                                          <img class="imagen_logo" src="./public/comida.png" alt="Logo de la empresa" height="50px">
                                         </div>
                                     </td>
                                     <td class="desc">
@@ -283,18 +339,7 @@
                                               Old Prince Premium Adultos Todos Los Tamaños En Bolsa De 23 Kg
                                             </a>
                                         </h3>
-                                        <p class="small">
-                                          La selección de un alimento adecuado para tu mascota es muy importante para garantizar su crecimiento, desarrollo y salud. Con esta opción de Old Prince podrás cubrir las necesidades nutricionales y energéticas de tu perro.
 
-                                        </p>
-                                        <dl class="small m-b-none">
-                                          <dt>Formas de envío</dt>
-                                          <dd>Los medios de envíos a acordar con vendeder.</dd>
-                                        </dl>
-
-                                        <div class="m-t-sm">
-                                            <a href="#" class="text-muted"><i class="fa fa-gift"></i> Agregar descuento</a>
-                                            |
                                             <a href="#" class="text-muted"><i class="fa fa-trash"></i> Eliminar item</a>
                                         </div>
                                     </td>
@@ -317,7 +362,7 @@
                         </div>
 
                     </div>
-                    <div class="ibox-content">
+                    <div class="ibox-content-final">
 
                         <button class="btn btn-primary float-right"><i class="fa fa fa-shopping-cart"></i> Comprar</button>
                         <button class="btn btn-white"><i class="fa fa-arrow-left"></i> Continua comprando</button>
@@ -346,7 +391,7 @@
                         </span>
                         <div class="m-t-sm">
                             <div class="btn-group">
-                            <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-shopping-cart"></i> Comporar </a>
+                            <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-shopping-cart"></i> Comprar </a>
                             <a href="#" class="btn btn-white btn-sm"> Cancelar</a>
                             </div>
                         </div>
@@ -409,13 +454,13 @@
     </div>
     </main>
 
-    <footer class="footer">
+    <!--<footer class="footer">
       <small style=" display: inline-block">
         © 2023 made with
         <a target="_blank" href="http://macrosistemassrl.com.ar"> MacroSistemas S.R.L </a>
       </small>
       <br />
-    </footer>
+    </footer>-->
     <script src="../MsPortal/js/menu.js"></script>
   </body>
 </html>
