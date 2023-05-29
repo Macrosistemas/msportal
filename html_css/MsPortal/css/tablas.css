@@ -1,0 +1,39 @@
+table.auto {
+    table-layout: auto;
+    width: 10px;
+  }
+
+table.show {
+    border-collapse:separate;
+    empty-cells: show;
+ }
+ table{
+    margin-top: 200px; 
+    margin-right: 150px;
+ }
+ /*.section-tabla{
+  display: flex;
+  flex-direction: row-reverse;
+ }*/
+ 
+/*PERMISOS*/
+#permiso{
+    position: relative;
+    margin-top: 0%;
+    }
+    #estado{
+    padding-left: 15‒;
+    border-left-width: 1px;
+    }
+    
+    a .estadoPer{
+    margin-left: 25px;
+    }
+    
+  /*.top {
+    width: 1500px;
+    height: 19px;
+    padding-top: -20;
+    margin-top: -150px;
+    }*/
+    /*FIN PERMISOS*/
