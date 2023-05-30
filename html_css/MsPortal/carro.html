@@ -9,9 +9,7 @@
     <link rel="shortcut icon" href="./public/logoms.ico">
 
     <link href="../MsPortal/css/styles_ni.css" rel="stylesheet" type="text/css">
-
     <link href="../MsPortal/css/styles.css" rel="stylesheet" type="text/css">
-    <!-- Fontawesome CDN Link -->
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
   </head>
@@ -167,9 +165,10 @@
                 <article class="modal-inside">
                   <span id="closeModal" class="close">&times;</span>  
                   <br>
-                  <img class="imagen_perfil" src="./public/hora.png" alt="Imagen de perfil" height="120px" width="120px">
-
-                  <h2>Horacio Perucca</h2>
+                  <img class="imagen_perfil" src="./public/hora.png" alt="Imagen de perfil" height="180px" width="180px">
+                  
+                  <h2>Horacio Perucca </h2>
+                 <h4>Editar Imagen <i class="fa-regular fa-pen-to-square"></i></h4>
                   <hr style="color:gray">
                     <div class="info-perfil">
                       <div class="info-perfil-inside">
@@ -205,24 +204,17 @@
         </div>
 
 
-        <a href="#"><i class="fa-regular fa-user"></i> Logout</a>
+        <a href="./login.html"><i class="fa-regular fa-user"></i> Logout</a>
       </ul>
-
     </nav>
-
     <nav class="navbar2">
       <img class="imagen_logo" src="./public/vital.png" alt="Logo de la empresa" height="60px">
       <ul class="nav navbar-nav navbar-right">
         <h4>Carrito de Compras</h4>
       </ul>
+    </nav>
 
-    </nav>
-    <nav class="navbar2" >
-      <img class="imagen_logo" src="./public/vital.png" alt="Logo de la empresa" height="60px">
-      <ul class="nav navbar-nav navbar-right">
-        <h4>Permisos</h4>
-      </ul>
-    </nav>
+
 
     <main class="main">
       
@@ -282,15 +274,21 @@
                     </div>
 
                     <div class="modal-art" id="modal-art">
+
+                      
                       <div class="modal-content-art">
+                        
                         <img class="imagen_logo" src="./public/comida2.png" alt="Logo de la empresa" height="200px">
                         
                         <div>
+                          
                           <h2>Alimento Dogpro para perro adulto todos los tamaños sabor mix en bolsa de 20 kg</h2>
                           <hr>
-                          <input type="checkbox" class="forms-control">20kg
-                          <input type="checkbox" class="forms-control">10kg
-                          <input type="checkbox" class="forms-control">5kg
+                          <div class="checkcontrol">
+                            <h3><input type="checkbox" class="forms-control">20kg</h3>
+                            <h3><input type="checkbox" class="forms-control">10kg</h3>
+                            <h3><input type="checkbox" class="forms-control">5kg</h3>
+                          </div>
                           <hr>
                           <p>Es una tecnología exclusiva, formulada con una novedosa mezcla de aminoácidos, antioxidantes naturales, vitaminas del complejo B y omega 3 y 6, para ayudar a proteger y mantener la actividad cerebral y retrasar los signos del envejecimiento de tu gato.</p>
                           <hr>
@@ -301,12 +299,17 @@
                           <div class="m-t-sm">
                             <div class="btn-group">
                             <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-shopping-cart"></i> Agregar al Carrito </a>
-                            <a href="#" id="closeModal-art" class="btn btn-white btn-sm" > Cancelar</a>
+                            
                             </div>
+                            <div class="btn-group">
+                              
+                              <a href="#" id="closeModal-art" class="btn btn-white btn-sm" > Cancelar</a>
+                              </div>
                         </div>
                         </div>
-                        <span id="closeModal-art" class="close">&times;</span>
+                        <span id="closeModal-art" class="close" style="left: 0">&times;</span>  
                       </div>
+                      
                     </div>
 
                     <div class="ibox-content">
@@ -418,7 +421,10 @@
                         </span>
                         <div class="m-t-sm">
                             <div class="btn-group">
+                            
                             <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-shopping-cart"></i> Comprar </a>
+                          </div>
+                            <div class="btn-group">
                             <a href="#" class="btn btn-white btn-sm"> Cancelar</a>
                             </div>
                         </div>
@@ -474,6 +480,7 @@
 
                     </div>
                 </div>
+                
 
             </div>
         </div>
@@ -481,14 +488,15 @@
     </div>
     </main>
 
-    <!--<footer class="footer">
+    <footer class="footer">
       <small style=" display: inline-block">
         © 2023 made with
         <a target="_blank" href="http://macrosistemassrl.com.ar"> MacroSistemas S.R.L </a>
       </small>
       <br />
-    </footer>-->
+    </footer>
     <script src="../MsPortal/js/menu.js"></script>
+    <script src="../MsPortal/js/modal.js"></script>
   </body>
 </html>
 
