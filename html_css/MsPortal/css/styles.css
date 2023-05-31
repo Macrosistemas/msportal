@@ -135,13 +135,13 @@
 @media (max-width: 450px) {
   .h-custom {
   height: 100%;
-}
+  }
 
   .wrapper-content {
     padding: 20px 10px 40px;
     margin-top: 1200px;
     margin-left: -250px;
-}
+  }
 
   .text-navy {
     color: #2f6178 !important;
@@ -151,7 +151,7 @@
   .ibox-content{
   display: flex;
     flex-wrap: wrap;
-}
+  }
 
 
   .col-md-3, .col-md-9 {
@@ -160,7 +160,7 @@
     padding-right: 15px;
     margin-left: 259px;
     padding-left: 15px;
-}
+  }
 
   .sidebar.close~.navbar,
   .sidebar.close~.navbar2,
@@ -169,40 +169,34 @@
     left: 0;
     width: 100%;
     margin-left: 1px;
-}
+  }
 
   .row ::after{
     margin-left: 50px;
-}
+  }
 
   .info-perfil {
   width: 100%;
   background-color: whitesmoke;
   padding: 20px;
   display: flex;
-    flex-wrap: wrap;
-}
+  flex-wrap: wrap;
+  }
 
   .sidebar .row{
     left: auto;
-}
+  }
   .modal-content{
     width: 90%;
     font-size: 0.7em;
     margin-top: 180px;
-}
-
-
-.modal-content-art {
+  }
+  .modal-content-art {
       width: 83%;
       font-size: 0.7em;
       margin-top: 180px;
       margin-right: 10px;
-}
-
-  .tbody{
-
-}
+  }
 }
 
 .vh-100 {
@@ -234,10 +228,7 @@
   color: black;
 }
 
-
-
 /*MENU VERTICAL */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 
 ul {
@@ -431,6 +422,8 @@ ul {
   height: 100vh;
   z-index: 100;
   background: #FFF;
+  flex-direction: column;
+  margin-bottom: -270px;
 }
 
 .main h1 {

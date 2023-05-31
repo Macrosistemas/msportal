@@ -114,29 +114,11 @@
 
     <main class="main">
       <section class="section-table"> 
-        <section class="top">
-          <a class="permisoPer"> Cuit: 
-            <select name="permisos" id="permisos">
-              <option value="alta">Alta</option>
-              <option value="baja">Baja</option>
-              <option value="editar">Editar</option>
-              <option value="consulta">Consultar</option>
-            </select>
-          </a>
-          <a class="estadoPer">Empresas: 
-            <select name="estado" id="empresa">
-              <option value="activo">Activos</option>
-              <option value="inactivo">Inactivos</option>
-            </select>
-          </a>
-          <a class="estadoPer">Usuarios: 
-            <select name="estado" id="usuario">
-              <option value="activo">Activos</option>
-              <option value="inactivo">Inactivos</option>
-            </select>
-          </a>
-        </section>
-        <section class="down" >
+        <div class="search-container">
+          <input type="text" id="search-input" class="search-input" placeholder="Buscar...">
+          <button onclick="search()" class="search-button"><i class="fas fa-search search-icon"></i></button>
+        </div>
+        <section class="section-down" >
           <table class="table">
             <thead>
               <tr>

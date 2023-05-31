@@ -114,35 +114,17 @@
 
     <main class="main">
       <section class="section-table"> 
-        <section class="top">
-          <a class="permisoPer"> Permisos: 
-            <select name="permisos" id="permisos">
-              <option value="alta">Alta</option>
-              <option value="baja">Baja</option>
-              <option value="editar">Editar</option>
-              <option value="consulta">Consultar</option>
-            </select>
-          </a>
-          <a class="estadoPer">Roles: 
-            <select name="estado" id="empresa">
-              <option value="activo">Activos</option>
-              <option value="inactivo">Inactivos</option>
-            </select>
-          </a>
-          <a class="estadoPer">Estados: 
-            <select name="estado" id="usuario">
-              <option value="activo">Activos</option>
-              <option value="inactivo">Inactivos</option>
-            </select>
-          </a>
-        </section>
-        <section class="down" >
+        <div class="search-container">
+          <input type="text" id="search-input" class="search-input" placeholder="Buscar...">
+          <button onclick="search()" class="search-button"><i class="fas fa-search search-icon"></i></button>
+        </div>
+        <section class="section-down" >
           <table class="table">
             <thead>
               <tr>
-                <th> Cuit </th>
-                <th> Empresa </th>
-                <th> Usuario </th>
+                <th> Permiso </th>
+                <th> Rol </th>
+                <th> Estado </th>
                 <th> Acciones </th>
               </tr>
             </thead>
