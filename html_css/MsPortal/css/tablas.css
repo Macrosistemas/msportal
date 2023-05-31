@@ -11,6 +11,10 @@ table.show {
     margin-top: 200px; 
     margin-right: 150px;
  }
+
+ .td-icon{
+  text-align: center;
+ }
  /*.section-tabla{
   display: flex;
   flex-direction: row-reverse;
