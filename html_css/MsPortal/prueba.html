@@ -17,32 +17,7 @@
             background-color: #f2f2f2;
         }
         
-        .edit-icon, .delete-icon, .search-icon {
-            cursor: pointer;
-        }
-        
-        .search-container {
-            display: flex;
-            align-items: center;
-            margin-bottom: 10px;
-        }
-        
-        .search-input {
-            flex-grow: 1;
-            padding: 5px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            margin-right: 5px;
-        }
-        
-        .search-button {
-            background-color: #4CAF50;
-            color: white;
-            padding: 6px 12px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
+       
     </style>
 </head>
 <body>
@@ -86,40 +61,6 @@
     </table>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
-    <script>
-        function search() {
-            var input, filter, table, tr, td, i, txtValue;
-            input = document.getElementById("search-input");
-            filter = input.value.toUpperCase();
-            table = document.querySelector("table");
-            tr = table.getElementsByTagName("tr");
-        
-            for (i = 0; i < tr.length; i++) {
-                var display = false;
-                for (j = 0; j < tr[i].cells.length; j++) {
-                    td = tr[i].cells[j];
-                    if (td) {
-                        txtValue = td.textContent || td.innerText;
-                        if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                            display = true;
-                            break;
-                        }
-                    }
-                }
-                if (display) {
-                    tr[i].style.display = "";
-                } else {
-                    tr[i].style.display = "none";
-                }
-            }
-
-            var headerRow = document.getElementById("header-row");
-            if (input.value !== "") {
-                headerRow.style.display = "";
-            } else {
-                headerRow.style.display = "none";
-            }
-        }
-    </script>
+    
 </body>
 </html>
