@@ -207,6 +207,7 @@ ul {
 
 
 
+
 @media (max-width: 450px) {
     .sidebar.close~.navbar,
     .sidebar.close~.navbar2,
@@ -215,7 +216,10 @@ ul {
         left: 0;
         width: 100%;
         margin-left: 1px;
+        width: 100%;
+    }
+    .footer{
+        bottom: -1615px
     }
 }
-
  

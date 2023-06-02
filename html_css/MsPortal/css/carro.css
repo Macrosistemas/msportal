@@ -1,11 +1,18 @@
 .table-responsive {
-    display: block;
+  display: flex;
+  justify-content: space-between;
     width: 100%;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
   }
 
-  
+  .form-control input{
+    width: 30px;
+  }
+
+  .input-cant input{
+    width: 20px;
+  }
 /*MODAL PERFIL*/
 .modal {
     position: fixed;
@@ -82,6 +89,7 @@
     float: right;
     font-size: 28px;
     font-weight: bold;
+    height: 0;
   }
   
   .close:hover,
@@ -90,7 +98,14 @@
     text-decoration: none;
     cursor:pointer;
   }
-  
+  .checkcontrol{
+    display: flex;
+    justify-content: space-around;
+  }
+  .m-t-sm{
+    display: flex;
+    justify-content: space-between;
+  }
   /*MODAL PERFIL FIN*/
   
   /*MODAL art*/
@@ -129,20 +144,106 @@
     text-decoration: none;
     cursor: pointer;
   }
-  
-
   /*MODAL art fin*/
 
-  @media (min-width:768px) {
-    .col-md-3 {
-      -ms-flex: 0 0 25%;
-      flex: 0 0 25%;
-      max-width: 25%;
-    }
-  
-    .col-md-9 {
-      -ms-flex: 0 0 75%;
-      flex: 0 0 75%;
-      max-width: 75%;
-    }
+  .ibox-content {
+    clear: both;
+}
+
+.ibox-content {
+    background-color: #ffffff;
+    color: inherit;
+    padding: 15px 20px 20px 20px;
+    border-color: #e7eaec;
+    border-image: none;
+    border-style: solid;
+    border-width: 1px;
+}
+.ibox-title {
+  background-color: #ffffff;
+  border-color: #e7eaec;
+  border-image: none;
+  border-style: solid solid none;
+  border-width: 1px;
+  color: inherit;
+  margin-top: 5px;
+  padding: 15px 90px 8px 15px;
+  min-height: 48px;
+  position: relative;
+  clear: both;
+  -webkit-border-radius: 3px 3px 0 0;
+  -moz-border-radius: 3px 3px 0 0;
+  border-radius: 10px 10px 0 0;
+}
+
+.ibox-content-final {
+  background-color: #ffffff;
+  color: inherit;
+  padding: 15px 20px 20px 20px;
+  border-color: #e7eaec;
+  border-image: none;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 0 0 10px 10px;
+}
+
+.row{
+  display: flex;
+}
+
+table {
+  display: table;
+  border-collapse: separate;
+  box-sizing: border-box;
+  text-indent: initial;
+  border-spacing: 2px;
+  border-color: gray;
+}
+.carro-contenedor{
+  display: flex;
+
+}
+  @media (min-width: 375px ) and (max-width: 389px){
+    .modal-content {
+      margin-top: 164px;
+      width: 95%;
   }
+  .col-md-9{
+    width: 85%;
+  }
+  .row{
+    flex-direction: column;
+    margin-top: 1200px;
+  }
+  .table-responsive{
+    flex-direction: column;
+  }
+  .imagen_carro{
+    text-align: center;
+  }
+  .modal-content-art{
+    width: 95%;
+    flex-direction: column;
+    margin-top: 165px;
+  }
+}
+
+  /*@media (min-width: 390px ) {
+    .col-md-9{
+      margin-top: -390px;
+    }
+}*/
+  @media (min-width: 768px){
+    .col-md-9 {
+        -ms-flex: 0 0 75%;
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+
+    .col-md-3, .col-md-9 {
+        position: relative;
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}

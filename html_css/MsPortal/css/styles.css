@@ -666,5 +666,24 @@ color: black;
   justify-content: center;
   z-index: 100;
   background: #FFF;
-  bottom: -215px;
+  /*bottom: -215px;*/
+  bottom: -402px;
+}
+@media (min-width: 375px ) and (max-width: 450px){
+  .contenedor{
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .formulario input[type="submit"] {
+    height: 43px;
+    padding: 4px 8px;
+  }
+  .finalform{
+    align-items: center;
+    
+  }
+  .finalform a{
+    margin-top: -25px;
+  }
 }
