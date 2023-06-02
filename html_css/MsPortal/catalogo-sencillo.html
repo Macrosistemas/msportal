@@ -8,6 +8,7 @@
     <title>Catalogo Sencillo</title>
     <link rel="shortcut icon" href="./public/logoms.ico">
     <link href="../MsPortal/css/styles.css" rel="stylesheet" type="text/css">
+    <link href="../MsPortal/css/sidebar.css" rel="stylesheet" type="text/css">
     <link href="../MsPortal/css/tablas1.css" rel="stylesheet" type="text/css">
     <link href="../MsPortal/css/catalogo.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="../MsPortal/css/catalogo.css">
@@ -123,11 +124,71 @@
     <div class="grandcontainer">
 
     </div>
-    <nav class="navbar">
+
+    <!--<nav class="navbar">
       <i class="fa-solid fa-bars" id="sidebar-close"></i>
       <ul class="nav navbar-nav navbar-right">
         <a href="#"><i class="fa-solid fa-user"></i> Sign in</a>
         <a href="#"><i class="fa-regular fa-user"></i> Logout</a>
+      </ul>
+    </nav>-->
+
+    <nav class="navbar">
+      <i class="fa-solid fa-bars" id="sidebar-close"></i>
+      <ul class="nav navbar-nav navbar-right">
+        <!--<i class="fa-solid fa-user" id="openModal"></i> Sign in</a>-->
+        <img class="imagen_perfil" src="./public/hora.png" alt="Imagen de perfil" height="32px" id="openModal">
+        <!--<img class="imagen_perfil" src="./public/hora.png" alt="Imagen de perfil" height="30px">-->
+        <!--<button id="openModal">Abrir modal</button>-->
+  
+        <div id="modal" class="modal">
+  
+          <article class="modal-content">
+  
+  
+            <article class="modal-inside">
+              <span id="closeModal" class="close">&times;</span>
+              <br>
+              <img class="imagen_perfil" src="./public/hora.png" alt="Imagen de perfil" height="180px" width="180px">
+  
+              <h2>Horacio Perucca </h2>
+              <h4>Editar Imagen <i class="fa-regular fa-pen-to-square"></i></h4>
+              <hr style="color:gray">
+              <div class="info-perfil">
+                <div class="info-perfil-inside">
+                  <h3>Nombre de Usuario</h3>
+                  <hr>
+                  <input type="text" class="info-perfil-inside-input" placeholder="Nombre de Usuario">
+                </div>
+                <hr>
+                <div class="info-perfil-inside">
+                  <h3>Nombre y Apellido</h3>
+                  <input type="text" class="info-perfil-inside-input" placeholder="Nombre y Apellido">
+                </div>
+                <hr>
+                <div class="info-perfil-inside">
+                  <h3>Cumpleaños</h3>
+                  <input type="date" class="info-perfil-inside-input" placeholder="Fecha de Nacimiento">
+                </div>
+                <hr>
+                <div class="info-perfil-inside">
+                  <h3>Email</h3>
+                  <input type="email" class="info-perfil-inside-input" placeholder="Nombre de Usuario">
+                </div>
+                <hr>
+                <div class="info-perfil-inside">
+                  <h3>Ubicación</h3>
+  
+                  <input type="text" class="info-perfil-inside-input" placeholder="Localidad">
+                </div>
+  
+              </div>
+            </article>
+          </article>
+        </div>
+  
+  
+        <a href="./login.html"><i class="fa-regular fa-user"></i> Logout</a>
       </ul>
     </nav>
 
@@ -142,7 +203,7 @@
       <div class="catalogo-sencillo">
         <table class="table-cats">
             <thead class="encabezado-cats">
-                <tr>
+                <tr >
                     <th class="titulo-cats">Producto</th>
                     <th class="titulo-cats">Tipo</th>
                     <th class="titulo-cats">Precio</th>
@@ -166,39 +227,39 @@
                     <td class="contenido-cats">Añadir/Quitar</td>
                 </tr>
                 <tr>
-                    <td>DogPro Sabor Mix</td>
-                    <td>Alimento</td>
-                    <td>$14.747,00</td>
-                    <td>1</td>
-                    <td>Añadir/Quitar</td>
+                    <td class="contenido-cats">DogPro Sabor Mix</td>
+                    <td class="contenido-cats">Alimento</td>
+                    <td class="contenido-cats">$14.747,00</td>
+                    <td class="contenido-cats">1</td>
+                    <td class="contenido-cats">Añadir/Quitar</td>
                 </tr>
                 <tr>
-                    <td>DogPro Sabor Mix</td>
-                    <td>Alimento</td>
-                    <td>$14.747,00</td>
-                    <td>1</td>
-                    <td>Añadir/Quitar</td>
+                    <td class="contenido-cats">DogPro Sabor Mix</td>
+                    <td class="contenido-cats">Alimento</td>
+                    <td class="contenido-cats">$14.747,00</td>
+                    <td class="contenido-cats">1</td>
+                    <td class="contenido-cats">Añadir/Quitar</td>
                 </tr>
                 <tr>
-                    <td>DogPro Sabor Mix</td>
-                    <td>Alimento</td>
-                    <td>$14.747,00</td>
-                    <td>1</td>
-                    <td>Añadir/Quitar</td>
+                    <td class="contenido-cats">DogPro Sabor Mix</td>
+                    <td class="contenido-cats">Alimento</td>
+                    <td class="contenido-cats">$14.747,00</td>
+                    <td class="contenido-cats">1</td>
+                    <td class="contenido-cats">Añadir/Quitar</td>
                 </tr>
                 <tr>
-                    <td>DogPro Sabor Mix</td>
-                    <td>Alimento</td>
-                    <td>$14.747,00</td>
-                    <td>1</td>
-                    <td>Añadir/Quitar</td>
+                    <td class="contenido-cats">DogPro Sabor Mix</td>
+                    <td class="contenido-cats">Alimento</td>
+                    <td class="contenido-cats">$14.747,00</td>
+                    <td class="contenido-cats">1</td>
+                    <td class="contenido-cats">Añadir/Quitar</td>
                 </tr>
                 <tr>
-                    <td>DogPro Sabor Mix</td>
-                    <td>Alimento</td>
-                    <td>$14.747,00</td>
-                    <td>1</td>
-                    <td>Añadir/Quitar</td>
+                    <td class="contenido-cats">DogPro Sabor Mix</td>
+                    <td class="contenido-cats">Alimento</td>
+                    <td class="contenido-cats">$14.747,00</td>
+                    <td class="contenido-cats">1</td>
+                    <td class="contenido-cats">Añadir/Quitar</td>
                 </tr>
             </tbody>
         </table>

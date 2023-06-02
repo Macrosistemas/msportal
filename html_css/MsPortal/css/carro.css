@@ -1,0 +1,249 @@
+.table-responsive {
+  display: flex;
+  justify-content: space-between;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .form-control input{
+    width: 30px;
+  }
+
+  .input-cant input{
+    width: 20px;
+  }
+/*MODAL PERFIL*/
+.modal {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .modal-content {
+    background-color: #2f6178;
+    margin: 10% auto;
+    border: 1px solid #888;
+    width: 40%;
+    border-radius: 15px;
+  }
+  
+  .modal-inside{
+    background-color: #2f6178;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+  }
+  
+  .modal-inside h2{
+    color:whitesmoke;
+    font-size: 150%;
+  }
+  
+  .modal-inside span{
+    justify-content: end;
+    margin-left: auto;
+    padding-right: 5px;
+  }
+  
+  .imagen_perfil{
+    border-radius: 100%;
+  }
+  
+  .info-perfil{
+    width: 100%;
+    background-color: whitesmoke;
+    padding: 20px;
+    border-radius: 0 0 15px 15px;
+  }
+  
+  .info-perfil h3{
+    color: #2f6178;
+  }
+  
+  .info-perfil-inside{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px;  
+    border-color: grey;
+  }
+  .info-perfil-inside h4{
+    color: #6c757d !important;
+  }
+  
+  .info-perfil-inside-input{
+    font-size: medium;
+    border: none;
+    background: whitesmoke;
+    text-align: right;
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    height: 0;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor:pointer;
+  }
+  .checkcontrol{
+    display: flex;
+    justify-content: space-around;
+  }
+  .m-t-sm{
+    display: flex;
+    justify-content: space-between;
+  }
+  /*MODAL PERFIL FIN*/
+  
+  /*MODAL art*/
+  .modal-art {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .modal-content-art {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 75%;
+    display: flex;
+    border-radius: 15px;
+  }
+  
+  .close-art {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close-art:hover,
+  .close-art:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  /*MODAL art fin*/
+
+  .ibox-content {
+    clear: both;
+}
+
+.ibox-content {
+    background-color: #ffffff;
+    color: inherit;
+    padding: 15px 20px 20px 20px;
+    border-color: #e7eaec;
+    border-image: none;
+    border-style: solid;
+    border-width: 1px;
+}
+.ibox-title {
+  background-color: #ffffff;
+  border-color: #e7eaec;
+  border-image: none;
+  border-style: solid solid none;
+  border-width: 1px;
+  color: inherit;
+  margin-top: 5px;
+  padding: 15px 90px 8px 15px;
+  min-height: 48px;
+  position: relative;
+  clear: both;
+  -webkit-border-radius: 3px 3px 0 0;
+  -moz-border-radius: 3px 3px 0 0;
+  border-radius: 10px 10px 0 0;
+}
+
+.ibox-content-final {
+  background-color: #ffffff;
+  color: inherit;
+  padding: 15px 20px 20px 20px;
+  border-color: #e7eaec;
+  border-image: none;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 0 0 10px 10px;
+}
+
+.row{
+  display: flex;
+}
+
+table {
+  display: table;
+  border-collapse: separate;
+  box-sizing: border-box;
+  text-indent: initial;
+  border-spacing: 2px;
+  border-color: gray;
+}
+.carro-contenedor{
+  display: flex;
+
+}
+  @media (min-width: 375px ) and (max-width: 389px){
+    .modal-content {
+      margin-top: 164px;
+      width: 95%;
+  }
+  .col-md-9{
+    width: 85%;
+  }
+  .row{
+    flex-direction: column;
+    margin-top: 1200px;
+  }
+  .table-responsive{
+    flex-direction: column;
+  }
+  .imagen_carro{
+    text-align: center;
+  }
+  .modal-content-art{
+    width: 95%;
+    flex-direction: column;
+    margin-top: 165px;
+  }
+}
+
+  /*@media (min-width: 390px ) {
+    .col-md-9{
+      margin-top: -390px;
+    }
+}*/
+  @media (min-width: 768px){
+    .col-md-9 {
+        -ms-flex: 0 0 75%;
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+
+    .col-md-3, .col-md-9 {
+        position: relative;
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}

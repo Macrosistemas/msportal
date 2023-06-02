@@ -7,10 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Carrito</title>
     <link rel="shortcut icon" href="./public/logoms.ico">
-
-    <link href="../MsPortal/css/styles_ni.css" rel="stylesheet" type="text/css">
+    <link href="../MsPortal/css/carro.css" rel="stylesheet" type="text/css">
+    <link href="../MsPortal/css/modal.css" rel="stylesheet" type="text/css">
     <link href="../MsPortal/css/styles.css" rel="stylesheet" type="text/css">
-
+    <link href="../MsPortal/css/sidebar.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
   </head>
   <body>
@@ -220,7 +220,7 @@
       
       
       <!--<h1 class="empresa_nombre">NOMBRE DE EMPRESA</h1>-->
-      <div class="wrapper wrapper-content animated fadeInRight">
+      <div class="wrapper wrapper-content animated fadeInRight" style="background-color: whitesmoke;">
 
 
 
@@ -238,13 +238,13 @@
                             <table class="table shoping-cart-table">
 
                                 <tbody>
-                                <tr>
-                                    <td width="90">
-                                        <div class="cart-product-imitation">
+                                <tr class="carro-contenedor">
+                                    <div width="90">
+                                        <div class="imagen_carro">
                                           <img class="imagen_logo" src="./public/comida.png" alt="Logo de la empresa" height="50px">
                                         </div>
-                                    </td>
-                                    <td class="desc">
+                                      </div>
+                                    <div class="desc">
                                         <h3 id="openModal-art">
                                             <a href="#" class="text-navy" >
                                               Alimento Dogpro para perro adulto todos los tamaños sabor mix en bolsa de 20 kg
@@ -253,19 +253,19 @@
                                        
                                           <a href="#" class="text-muted"><i class="fa fa-trash"></i> Eliminar item</a>
                                         </div>
-                                    </td>
+                                    </div>
 
-                                    <td>
+                                    <div>
                                         $5000,00
-                                    </td>
-                                    <td width="65">
+                                    </div>
+                                    <div class="input-cant">
                                         <input type="text" class="form-control" placeholder="1">
-                                    </td>
-                                    <td>
+                                    </div>
+                                    <div>
                                         <h4>
                                             $5000,00
                                         </h4>
-                                    </td>
+                                    </div>
 
                                 </tr>
                                 </tbody>
@@ -282,7 +282,7 @@
                         
                         <div>
                           
-                          <h2>Alimento Dogpro para perro adulto todos los tamaños sabor mix en bolsa de 20 kg</h2>
+                          <h2>Alimento Dogpro para perro adulto sabor mix en bolsa de 20 kg</h2>
                           <hr>
                           <div class="checkcontrol">
                             <h3><input type="checkbox" class="forms-control">20kg</h3>
@@ -318,12 +318,12 @@
 
                                 <tbody>
                                 <tr>
-                                    <td width="90">
-                                        <div class="cart-product-imitation">
+                                    <div width="90">
+                                        <div class="imagen_carro">
                                           <img class="imagen_logo" src="./public/comida.png" alt="Logo de la empresa" height="50px">
                                         </div>
-                                    </td>
-                                    <td class="desc">
+                                    </div>
+                                    <div class="desc">
                                         <h3>
                                             <a href="#" class="text-navy">
                                               Proplan Pouch Adult Cat Salmon 85grs Caja X 15 Unidades
@@ -332,19 +332,19 @@
 
                                           <a href="#" class="text-muted"><i class="fa fa-trash"></i> Eliminar item</a>
                                         </div>
-                                    </td>
+                                    </div>
 
-                                    <td>
+                                    <div>
                                         $5000,00
-                                    </td>
-                                    <td width="65">
+                                    </div>
+                                    <div width="65">
                                         <input type="text" class="form-control" placeholder="1">
-                                    </td>
-                                    <td>
+                                    </div>
+                                    <div>
                                         <h4>
                                             $5000,00
                                         </h4>
-                                    </td>
+                                    </div>
 
                                 </tr>
                                 </tbody>
@@ -358,12 +358,12 @@
 
                                 <tbody>
                                 <tr>
-                                    <td width="90">
-                                        <div class="cart-product-imitation">
+                                    <div width="90">
+                                        <div class="imagen_carro">
                                           <img class="imagen_logo" src="./public/comida.png" alt="Logo de la empresa" height="50px">
                                         </div>
-                                    </td>
-                                    <td class="desc">
+                                    </div>
+                                    <div class="desc">
                                         <h3>
                                             <a href="#" class="text-navy">
                                               Old Prince Premium Adultos Todos Los Tamaños En Bolsa De 23 Kg
@@ -372,15 +372,15 @@
 
                                             <a href="#" class="text-muted"><i class="fa fa-trash"></i> Eliminar item</a>
                                         </div>
-                                    </td>
+                                    </div>
 
-                                    <td>
+                                    <div>
                                         $5000,00
-                                    </td>
-                                    <td width="65">
+                                    </div>
+                                    <div width="65">
                                         <input type="text" class="form-control" placeholder="1">
-                                    </td>
-                                    <td>
+                                    </div>
+                                    <div>
                                         <h4>
                                             $5000,00
                                         </h4>
@@ -395,7 +395,7 @@
                     <div class="ibox-content-final">
 
                         <button class="btn btn-primary float-right"><i class="fa fa fa-shopping-cart"></i> Comprar</button>
-                        <button class="btn btn-white"><i class="fa fa-arrow-left"></i> Continua comprando</button>
+                        <button class="btn btn-white"><i class="fa fa-arrow-left"></i> Seguir comprando</button>
 
                     </div>
                 </div>

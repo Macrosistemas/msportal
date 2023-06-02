@@ -9,8 +9,11 @@
     <link rel="shortcut icon" href="./public/logoms.ico">
     <link href="../MsPortal/css/styles.css" rel="stylesheet" type="text/css">
     <link href="../MsPortal/css/tablas.css" rel="stylesheet" type="text/css">
+    <link href="../MsPortal/css/sidebar.css" rel="stylesheet" type="text/css">
     <!-- Fontawesome CDN Link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+    <script src="../MsPortal/js/buscador.js"></script>
   </head>
   <body>
     <nav class="sidebar">
@@ -28,6 +31,7 @@
               <span>Administrador</span>
               <i class="fa-solid fa-chevron-right"></i>
             </div>
+          
 
             <ul class="menu-items submenu">
               <div class="menu-title">
@@ -84,27 +88,6 @@
               <li class="item">
                 <a href="#">Second sublink</a>
               </li>
-              <li class="item">
-                <a href="#">Second sublink</a>
-              </li>
-              <li class="item">
-                <a href="#">Second sublink</a>
-              </li>
-              <li class="item">
-                <a href="#">Second sublink</a>
-              </li>
-              <li class="item">
-                <a href="#">Second sublink</a>
-              </li>
-              <li class="item">
-                <a href="#">Second sublink</a>
-              </li>
-              <li class="item">
-                <a href="#">Second sublink</a>
-              </li>
-              <li class="item">
-                <a href="#">Second sublink</a>
-              </li>
             </ul>
           </li>
 
@@ -133,55 +116,58 @@
     </nav>
 
     <main class="main">
-       <section class="top">
-        <a class="permisoPer"> Permisos: 
-          <select name="permisos" id="permisos">
-            <option value="alta">Alta</option>
-            <option value="baja">Baja</option>
-            <option value="editar">Editar</option>
-            <option value="consulta">Consultar</option>
-          </select>
-        </a>
-        <a class="estadoPer">Estados: 
-          <select name="estado" id="estado">
-            <option value="activo">Activos</option>
-            <option value="inactivo">Inactivos</option>
-          </select>
-        </a>
+      <section class="section-table"> 
+        <div class="search-container">
+          <input type="text" id="search-input" class="search-input" placeholder="Buscar...">
+          <button onclick="search()" class="search-button"><i class="fas fa-search search-icon"></i></button>
+        </div>
+        <section class="section-down" >
+          <table class="table">
+            <thead>
+              <tr>
+                <th> Cuit </th>
+                <th> Empresa </th>
+                <th> Usuario </th>
+                <th> Acciones </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td> Matemática  </td>
+                <td> Ciencias </td>
+                <td> Matemática </td>
+                <td class="td-icon">
+                  <i class="fas fa-edit edit-icon"></i>
+                  <i class="fas fa-trash-alt delete-icon"></i>
+                </td>
+              </tr>
+              <tr>
+                <td> Inglés </td>
+                <td> Comunicación </td>
+                <td> Biologia </td>
+                <td class="td-icon">
+                  <i class="fas fa-edit edit-icon"></i>
+                  <i class="fas fa-trash-alt delete-icon"></i>
+                </td>
+              </tr>
+              <tr>
+                <td> Computación </td>
+                <td> Historia </td>
+                <td> Economia </td>
+                <td class="td-icon">
+                  <i class="fas fa-edit edit-icon"></i>
+                  <i class="fas fa-trash-alt delete-icon"></i>
+                </td>
+              </tr>
+            </tbody>
+            <tfoot>
+  
+            </tfoot>
+          </table>
+        </section>
       </section>
-      <section>
-        <table class="table">
-          <thead>
-            <tr>
-              <th> Lunes </th>
-              <th> Martes </th>
-              <th> Miércoles </th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td> Matemática  </td>
-              <td> Ciencias </td>
-              <td> Matemática </td>
-            </tr>
-            <tr>
-              <td> Inglés </td>
-              <td> Comunicación </td>
-              <td> Biologia </td>
-            </tr>
-            <tr>
-              <td> Computación </td>
-              <td> Historia </td>
-              <td> Economia </td>
-             </tr>
-          </tbody>
-          <tfoot>
-
-          </tfoot>
-        </table>
-      </section>
-          
-    </main>
+      
+</main>
     <footer class="footer">
       <small style=" display: inline-block">
         © 2023 made with
