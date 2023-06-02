@@ -12,6 +12,9 @@
   <link href="../MsPortal/css/styles.css" rel="stylesheet" type="text/css">
   <link href="../MsPortal/css/tablas.css" rel="stylesheet" type="text/css">
   <link href="../MsPortal/css/sidebar.css" rel="stylesheet" type="text/css">
+
+  <link href="../MsPortal/css/carro.css" rel="stylesheet" type="text/css">
+  <link href="../MsPortal/css/modal.css" rel="stylesheet" type="text/css">
   
   <!-- Fontawesome CDN Link -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
@@ -107,8 +110,59 @@
   <nav class="navbar">
     <i class="fa-solid fa-bars" id="sidebar-close"></i>
     <ul class="nav navbar-nav navbar-right">
-      <a href="#"><i class="fa-solid fa-user"></i> Sign in</a>
-      <a href="#"><i class="fa-regular fa-user"></i> Logout</a>
+      <!--<i class="fa-solid fa-user" id="openModal"></i> Sign in</a>-->
+      <img class="imagen_perfil" src="./public/hora.png" alt="Imagen de perfil" height="32px" id="openModal">
+      <!--<img class="imagen_perfil" src="./public/hora.png" alt="Imagen de perfil" height="30px">-->
+      <!--<button id="openModal">Abrir modal</button>-->
+
+      <div id="modal" class="modal">
+
+        <article class="modal-content">
+
+
+          <article class="modal-inside">
+            <span id="closeModal" class="close">&times;</span>
+            <br>
+            <img class="imagen_perfil" src="./public/hora.png" alt="Imagen de perfil" height="180px" width="180px">
+
+            <h2>Horacio Perucca </h2>
+            <h4>Editar Imagen <i class="fa-regular fa-pen-to-square"></i></h4>
+            <hr style="color:gray">
+            <div class="info-perfil">
+              <div class="info-perfil-inside">
+                <h3>Nombre de Usuario</h3>
+                <hr>
+                <input type="text" class="info-perfil-inside-input" placeholder="Nombre de Usuario">
+              </div>
+              <hr>
+              <div class="info-perfil-inside">
+                <h3>Nombre y Apellido</h3>
+                <input type="text" class="info-perfil-inside-input" placeholder="Nombre y Apellido">
+              </div>
+              <hr>
+              <div class="info-perfil-inside">
+                <h3>Cumpleaños</h3>
+                <input type="date" class="info-perfil-inside-input" placeholder="Fecha de Nacimiento">
+              </div>
+              <hr>
+              <div class="info-perfil-inside">
+                <h3>Email</h3>
+                <input type="email" class="info-perfil-inside-input" placeholder="Nombre de Usuario">
+              </div>
+              <hr>
+              <div class="info-perfil-inside">
+                <h3>Ubicación</h3>
+
+                <input type="text" class="info-perfil-inside-input" placeholder="Localidad">
+              </div>
+
+            </div>
+          </article>
+        </article>
+      </div>
+
+
+      <a href="./login.html"><i class="fa-regular fa-user"></i> Logout</a>
     </ul>
   </nav>
   <nav class="navbar2">
@@ -179,6 +233,7 @@
     <br />
   </footer>
   <script src="../MsPortal/js/menu.js"></script>
+  <script src="../MsPortal/js/modal.js"></script>
 </body>
 
 </html>
