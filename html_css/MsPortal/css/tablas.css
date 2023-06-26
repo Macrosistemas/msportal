@@ -31,21 +31,22 @@ table{
 
 .td-icon{
   text-align: center;
-}
+} 
 
-.table>tbody>tr>td {
+.table>tbody>tr>td  {
   border-top: 1px solid #e7eaec;
   line-height: 1.42857;
   padding: 8px;
   vertical-align: top;
-}
+} 
 
  .section-down{
   margin-top: -145px;
  }
+
  .section-table{
   margin-top: -400px;
- }
+ } 
 
  .edit-icon, .delete-icon, .search-icon {
   cursor: pointer;

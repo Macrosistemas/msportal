@@ -84,33 +84,83 @@
     transform: scale(1.03);
 }
 
+.catalogosencillo{
+    margin-top: -100px;
+}
 
-.encabezado-cats { 
+.tabla__encabezado { 
     height: 50px;
-    background-color:tomato;
+    background-color:#2f6178;
     color: #ffffff;
     text-align: center;
 }
 
-.titulo-cats{
-    width: 250px;
+.tabla__titulo{
+    width: 30rem;
+    font-weight: normal;
 }
 
-.catalogo-sencillo{
-    margin-top: -400px;
+.tabla__media{
+    width: 6rem;
 }
 
+.tabla__chica{
+    width: 3rem;
+}
 
-/*
-.table-cats{
-    margin-right: 150px;
-} */
+.tabla__precio{
+    width: 7rem;
+}
 
-.contenido-cats{
+.tabla__importe{
+    width: 8rem;
+}
+
+.contenedortabla{
+    margin-top: -150px;
+}
+
+.tabla__contenido{
     color: #808080 ;
     font-size: 15px;
     line-height: 21px;
-    padding: 0px 0px 0px 40px ;
-    text-align: center;
+    padding: .75rem;
+    vertical-align: bottom;
+    border-bottom: 1px solid #dee2e6;
 }
 
+.tabla__editable{
+    display: inline-flex;
+}
+
+.tabla__cant{
+    width: 2rem;
+}
+
+.tabla__num{
+    text-align: right;
+  }
+
+.search-container {
+display: flex;
+align-items: center;
+height: 380px;
+width: 700px;
+}
+
+.search-input {
+flex-grow: 1;
+padding: 5px;
+border: 1px solid #ccc;
+border-radius: 4px;
+margin-right: 5px;
+}
+
+.search-button {
+background-color: #2f6178;
+color: white;
+padding: 6px 12px;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+}
