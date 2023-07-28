@@ -1,307 +1,610 @@
 <!DOCTYPE html>
 <!-- Coding By CodingNepal - codingnepalweb.com -->
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Catalogo Sencillo</title>
-    <link rel="shortcut icon" href="./public/logoms.ico">
-    <link href="../MsPortal/css/styles.css" rel="stylesheet" type="text/css">
-    <link href="../MsPortal/css/sidebar.css" rel="stylesheet" type="text/css">
-    <link href="../MsPortal/css/catalogo.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="../MsPortal/css/catalogo.css">
-    <!-- Fontawesome CDN Link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
-    <script src="../MsPortal/js/buscador.js"></script> 
-  </head>
-  <body>
-    <nav class="sidebar">
-      <img src="./public/img/logomsCom.png" height="45px">
-      <div class="menu-content">
-        <ul class="menu-items">
-          <div class="menu-title">Ventas</div>
 
-          <li class="item">
-            <a href="#">Pedidos</a>
-          </li>
-          <li class="item">
-            <div class="submenu-item">
-              <span>Administrador</span>
-              <i class="fa-solid fa-chevron-right"></i>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Catalogo Sencillo</title>
+  <link rel="shortcut icon" href="./public/img/logoms.ico">
+  <link href="../MsPortal/css/styles.css" rel="stylesheet" type="text/css">
+  <link href="../MsPortal/css/sidebar.css" rel="stylesheet" type="text/css">
+  <link href="../MsPortal/css/catalogo.css" rel="stylesheet" type="text/css">
+
+  <!-- Fontawesome CDN Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+  <script src="../MsPortal/js/buscador.js"></script>
+</head>
+
+<body>
+  <nav class="sidebar">
+    <img src="./public/img/logomsCom.png" height="45px">
+    <div class="menu-content">
+      <ul class="menu-items">
+        <div class="menu-title">Ventas</div>
+
+        <li class="item">
+          <a href="#">Pedidos</a>
+        </li>
+        <li class="item">
+          <div class="submenu-item">
+            <span>Administrador</span>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+
+          <ul class="menu-items submenu">
+            <div class="menu-title">
+              <i class="fa-solid fa-chevron-left"></i>
+              Atras
             </div>
-
-            <ul class="menu-items submenu">
-              <div class="menu-title">
-                <i class="fa-solid fa-chevron-left"></i>
-                Atras
-              </div>
-              <li class="item"> 
-                <a href="administrar_cuit.html">Empresas</a>
-              </li>
-            </ul>
-          </li>
-          <li class="item">
-            <div class="submenu-item">
-              <span>Seguridad</span>
-              <i class="fa-solid fa-chevron-right"></i>
+            <li class="item">
+              <a href="administrar_cuit.html">Empresas</a>
+            </li>
+          </ul>
+        </li>
+        <li class="item">
+          <div class="submenu-item">
+            <span>Seguridad</span>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+          <ul class="menu-items submenu">
+            <div class="menu-title">
+              <i class="fa-solid fa-chevron-left"></i>
+              Atras
             </div>
-            <ul class="menu-items submenu">
-              <div class="menu-title">
-                <i class="fa-solid fa-chevron-left"></i>
-                Atras
-              </div>
-              <li class="item"> 
-                <a href="permisos.html">Permisos</a>
-              </li>
-              <li class="item">
-                <a href="roles.html">Roles</a>
-              </li>
-              <li class="item">
-                <a href="permisosRoles.html">Permisos por Roles</a>
-              </li>
-            </ul>
-          </li>
-          
-          <li class="item">
-            <div class="submenu-item">
-              <span>Second submenu</span>
-              <i class="fa-solid fa-chevron-right"></i>
+            <li class="item">
+              <a href="permisos.html">Permisos</a>
+            </li>
+            <li class="item">
+              <a href="roles.html">Roles</a>
+            </li>
+            <li class="item">
+              <a href="permisosRoles.html">Permisos por Roles</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="item">
+          <div class="submenu-item">
+            <span>Second submenu</span>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+
+          <ul class="menu-items submenu">
+            <div class="menu-title">
+              <i class="fa-solid fa-chevron-left"></i>
+              Your submenu title
             </div>
+            <li class="item">
+              <a href="#">Second sublink</a>
+            </li>
+            <li class="item">
+              <a href="#">Second sublink</a>
+            </li>
+            <li class="item">
+              <a href="#">Second sublink</a>
+            </li>
+            <li class="item">
+              <a href="#">Second sublink</a>
+            </li>
+            <li class="item">
+              <a href="#">Second sublink</a>
+            </li>
+            <li class="item">
+              <a href="#">Second sublink</a>
+            </li>
+            <li class="item">
+              <a href="#">Second sublink</a>
+            </li>
+            <li class="item">
+              <a href="#">Second sublink</a>
+            </li>
+            <li class="item">
+              <a href="#">Second sublink</a>
+            </li>
+            <li class="item">
+              <a href="#">Second sublink</a>
+            </li>
+            <li class="item">
+              <a href="#">Second sublink</a>
+            </li>
+          </ul>
+        </li>
 
-            <ul class="menu-items submenu">
-              <div class="menu-title">
-                <i class="fa-solid fa-chevron-left"></i>
-                Your submenu title
-              </div>
-              <li class="item">
-                <a href="#">Second sublink</a>
-              </li>
-              <li class="item">
-                <a href="#">Second sublink</a>
-              </li>
-              <li class="item">
-                <a href="#">Second sublink</a>
-              </li>
-              <li class="item">
-                <a href="#">Second sublink</a>
-              </li>
-              <li class="item">
-                <a href="#">Second sublink</a>
-              </li>
-              <li class="item">
-                <a href="#">Second sublink</a>
-              </li>
-              <li class="item">
-                <a href="#">Second sublink</a>
-              </li>
-              <li class="item">
-                <a href="#">Second sublink</a>
-              </li>
-              <li class="item">
-                <a href="#">Second sublink</a>
-              </li>
-              <li class="item">
-                <a href="#">Second sublink</a>
-              </li>
-              <li class="item">
-                <a href="#">Second sublink</a>
-              </li>
-            </ul>
-          </li>
+        <li class="item">
+          <a href="#">Your second link</a>
+        </li>
 
-          <li class="item">
-            <a href="#">Your second link</a>
-          </li>
+        <li class="item">
+          <a href="#">Your third link</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
-          <li class="item">
-            <a href="#">Your third link</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+  <nav class="navbar">
+    <i class="fa-solid fa-bars" id="sidebar-close"></i>
+    <ul class="nav navbar-nav navbar-right">
+      <a href="#"><i class="fa-solid fa-user"></i> Sign in</a>
+      <a href="#"><i class="fa-regular fa-user"></i> Logout</a>
+    </ul>
+  </nav>
 
-    <nav class="navbar">
-      <i class="fa-solid fa-bars" id="sidebar-close"></i>
-      <ul class="nav navbar-nav navbar-right">
-        <a href="#"><i class="fa-solid fa-user"></i> Sign in</a>
-        <a href="#"><i class="fa-regular fa-user"></i> Logout</a>
+  <nav class="navbar2">
+    <img class="imagen_logo" src="./public/img/vital.png" alt="Logo de la empresa" height="60px">
+    <ul class="nav navbar-nav navbar-right">
+      <h4>Carrito de Compras</h4>
+    </ul>
+  </nav>
+
+  <main class="main">
+    <!--PRUEBO LISTA FILTROS-->
+    <nav class="nav__filtros">
+      <ul class="list">
+        <li class="list__item list__item--click">
+          <div class="list__button list__button--click">
+            <a href="#" class="nav__link">Stock</a>
+            <img src="../MsPortal/public/img/arrow-24.png" class="list__arrow">
+          </div>
+
+          <ul class="list__show">
+            <li class="list__inside">
+              <input type="checkbox">
+              <a href="#" class="nav__link nav__link--inside">Todos</a>
+            </li>
+
+            <li class="list__inside">
+              <input type="checkbox">
+              <a href="#" class="nav__link nav__link--inside">Con Stock</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="list__item list__item--click">
+          <div class="list__button list__button--click">
+            <a href="#" class="nav__link">Categorías</a>
+            <img src="../MsPortal/public/img/arrow-24.png" class="list__arrow">
+          </div>
+
+          <ul class="list__show">
+            <li class="list__inside">
+              <input type="checkbox">
+              <a href="#" class="nav__link nav__link--inside">Perros</a>
+            </li>
+
+            <li class="list__inside">
+              <input type="checkbox">
+              <a href="#" class="nav__link nav__link--inside">Gatos</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="list__item list__item--click">
+          <div class="list__button list__button--click">
+            <a href="#" class="nav__link">Tipo</a>
+            <img src="../MsPortal/public/img/arrow-24.png" class="list__arrow">
+          </div>
+
+          <ul class="list__show">
+            <li class="list__inside">
+              <input type="checkbox">
+              <a href="#" class="nav__link nav__link--inside">Adulto</a>
+            </li>
+
+            <li class="list__inside">
+              <input type="checkbox">
+              <a href="#" class="nav__link nav__link--inside">Cachorro</a>
+            </li>
+
+            <li class="list__inside">
+              <input type="checkbox">
+              <a href="#" class="nav__link nav__link--inside">Senior</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="list__item list__item--click">
+          <div class="list__button list__button--click">
+            <a href="#" class="nav__link">Tipo de Envase</a>
+            <img src="../MsPortal/public/img/arrow-24.png" class="list__arrow">
+          </div>
+
+          <ul class="list__show">
+            <li class="list__inside">
+              <input type="checkbox">
+              <a href="#" class="nav__link nav__link--inside">Bolsa</a>
+            </li>
+
+            <li class="list__inside">
+              <input type="checkbox">
+              <a href="#" class="nav__link nav__link--inside">Lata</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="list__item list__item--click">
+          <div class="list__button list__button--click">
+            <a href="#" class="nav__link">Comida</a>
+            <img src="../MsPortal/public/img/arrow-24.png" class="list__arrow">
+          </div>
+
+          <ul class="list__show">
+            <li class="list__inside">
+              <input type="checkbox">
+              <a href="#" class="nav__link nav__link--inside">Seca</a>
+            </li>
+
+            <li class="list__inside">
+              <input type="checkbox">
+              <a href="#" class="nav__link nav__link--inside">Humeda</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="list__item list__item--click">
+          <div class="list__button list__button--click">
+            <a href="#" class="nav__link">Marca</a>
+            <img src="../MsPortal/public/img/arrow-24.png" class="list__arrow">
+          </div>
+
+          <ul class="list__show">
+            <li class="list__inside">
+              <input type="checkbox">
+              <a href="#" class="nav__link nav__link--inside">DogPro</a>
+            </li>
+
+            <li class="list__inside">
+              <input type="checkbox">
+              <a href="#" class="nav__link nav__link--inside">CatPro</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="list__item list__item--click">
+          <div class="list__button list__button--click">
+            <a href="#" class="nav__link">Tamaño de Raza</a>
+            <img src="../MsPortal/public/img/arrow-24.png" class="list__arrow">
+          </div>
+
+          <ul class="list__show">
+            <li class="list__inside">
+              <input type="checkbox">
+              <a href="#" class="nav__link nav__link--inside">Todas</a>
+            </li>
+
+            <li class="list__inside">
+              <input type="checkbox">
+              <a href="#" class="nav__link nav__link--inside">Mini</a>
+            </li>
+
+            <li class="list__inside">
+              <input type="checkbox">
+              <a href="#" class="nav__link nav__link--inside">Pequeña</a>
+            </li>
+
+            <li class="list__inside">
+              <input type="checkbox">
+              <a href="#" class="nav__link nav__link--inside">Mediana</a>
+            </li>
+
+            <li class="list__inside">
+              <input type="checkbox">
+              <a href="#" class="nav__link nav__link--inside">Grande</a>
+            </li>
+          </ul>
+        </li>
+
       </ul>
     </nav>
-
-    <nav class="navbar2">
-      <img class="imagen_logo" src="./public/vital.png" alt="Logo de la empresa" height="60px">
-      <ul class="nav navbar-nav navbar-right">
-        <h4>Carrito de Compras</h4>
-      </ul>
-    </nav>
-    
-    <main class="main">
-      <div class="catalogosencillo">
-        <div class="search-container">
-          <input type="text" id="search-input" class="search-input" placeholder="Buscar...">
-          <button onclick="search()" class="search-button"><i class="fas fa-search search-icon"></i></button>
-        </div>
-        <div class="contenedortabla">
-          <table class="tabla">
-              <thead class="tabla__encabezado">
-                  <tr>
-                      <th class="tabla__titulo tabla__media">Codigo</th>
-                      <th class="tabla__titulo">Descripcion</th>
-                      <th class="tabla__titulo tabla__chica">Cantidad</th>
-                      <th class="tabla__titulo tabla__media">Stock</th>
-                      <th class="tabla__titulo tabla__precio">Precio</th>
-                      <th class="tabla__titulo tabla__importe">Importe</th>
-                  </tr>
-              </thead>
-              <tbody>
-                  <tr>
-                    <td class="tabla__contenido tabla__num">1069</td>
-                    <td class="tabla__contenido">DogPro Sabor Mix</td>
-                    <td class="tabla__contenido tabla__editable">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="tabla__svgi" viewBox="0 0 16 16"> <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/> </svg>
-                      <input type="text" class="tabla__cant" placeholder="0">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="tabla__svgd" viewBox="0 0 16 16"> <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1h-7z"/> </svg>
-                    </td>
-                    <td class="tabla__contenido tabla__num">500</td>
-                    <td class="tabla__contenido tabla__num">$14.747,00</td>
-                    <td class="tabla__contenido tabla__num">$14.747,00</td>
-                  </tr>
-                  <tr>
-                    <td class="tabla__contenido tabla__num">1069</td>
-                    <td class="tabla__contenido">DogPro Sabor Mix</td>
-                    <td class="tabla__contenido tabla__editable">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="tabla__svgi" viewBox="0 0 16 16"> <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/> </svg>
-                      <input type="text" class="tabla__cant" placeholder="0">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="tabla__svgd" viewBox="0 0 16 16"> <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1h-7z"/> </svg>
-                    </td>
-                    <td class="tabla__contenido tabla__num">500</td>
-                    <td class="tabla__contenido tabla__num">$14.747,00</td>
-                    <td class="tabla__contenido tabla__num">$14.747,00</td>
-                  </tr>
-                  <tr>
-                    <td class="tabla__contenido tabla__num">1069</td>
-                    <td class="tabla__contenido">DogPro Sabor Mix</td>
-                    <td class="tabla__contenido tabla__editable">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="tabla__svgi" viewBox="0 0 16 16"> <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/> </svg>
-                      <input type="text" class="tabla__cant" placeholder="0">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="tabla__svgd" viewBox="0 0 16 16"> <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1h-7z"/> </svg>
-                    </td>
-                    <td class="tabla__contenido tabla__num">500</td>
-                    <td class="tabla__contenido tabla__num">$14.747,00</td>
-                    <td class="tabla__contenido tabla__num">$14.747,00</td>
-                  </tr>
-                  <tr>
-                    <td class="tabla__contenido tabla__num">1069</td>
-                    <td class="tabla__contenido">DogPro Sabor Mix</td>
-                    <td class="tabla__contenido tabla__editable">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="tabla__svgi" viewBox="0 0 16 16"> <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/> </svg>
-                      <input type="text" class="tabla__cant" placeholder="0">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="tabla__svgd" viewBox="0 0 16 16"> <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1h-7z"/> </svg>
-                    </td>
-                    <td class="tabla__contenido tabla__num">500</td>
-                    <td class="tabla__contenido tabla__num">$14.747,00</td>
-                    <td class="tabla__contenido tabla__num">$14.747,00</td>
-                  </tr>
-                  <tr>
-                    <td class="tabla__contenido tabla__num">1069</td>
-                    <td class="tabla__contenido">DogPro Sabor Mix</td>
-                    <td class="tabla__contenido tabla__editable">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="tabla__svgi" viewBox="0 0 16 16"> <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/> </svg>
-                      <input type="text" class="tabla__cant" placeholder="0">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="tabla__svgd" viewBox="0 0 16 16"> <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1h-7z"/> </svg>
-                    </td>
-                    <td class="tabla__contenido tabla__num">500</td>
-                    <td class="tabla__contenido tabla__num">$14.747,00</td>
-                    <td class="tabla__contenido tabla__num">$14.747,00</td>
-                  </tr>
-                  <tr>
-                    <td class="tabla__contenido tabla__num">1069</td>
-                    <td class="tabla__contenido">DogPro Sabor Mix</td>
-                    <td class="tabla__contenido tabla__editable">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="tabla__svgi" viewBox="0 0 16 16"> <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/> </svg>
-                      <input type="text" class="tabla__cant" placeholder="0">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="tabla__svgd" viewBox="0 0 16 16"> <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1h-7z"/> </svg>
-                    </td>
-                    <td class="tabla__contenido tabla__num">500</td>
-                    <td class="tabla__contenido tabla__num">$14.747,00</td>
-                    <td class="tabla__contenido tabla__num">$14.747,00</td>
-                  </tr>
-                  <tr>
-                    <td class="tabla__contenido tabla__num">1069</td>
-                    <td class="tabla__contenido">Proplan Pouch Adult Cat Salmon</td>
-                    <td class="tabla__contenido tabla__editable">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="tabla__svgi" viewBox="0 0 16 16"> <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/> </svg>
-                      <input type="text" class="tabla__cant" placeholder="0">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="tabla__svgd" viewBox="0 0 16 16"> <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1h-7z"/> </svg>
-                    </td>
-                    <td class="tabla__contenido tabla__num">500</td>
-                    <td class="tabla__contenido tabla__num">$14.747,00</td>
-                    <td class="tabla__contenido tabla__num">$14.747,00</td>
-                  </tr>
-                  <tr>
-                    <td class="tabla__contenido tabla__num">1069</td>
-                    <td class="tabla__contenido">Proplan Pouch Adult Cat Salmon</td>
-                    <td class="tabla__contenido tabla__editable">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="tabla__svgi" viewBox="0 0 16 16"> <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/> </svg>
-                      <input type="text" class="tabla__cant" placeholder="0">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="tabla__svgd" viewBox="0 0 16 16"> <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1h-7z"/> </svg>
-                    </td>
-                    <td class="tabla__contenido tabla__num">500</td>
-                    <td class="tabla__contenido tabla__num">$14.747,00</td>
-                    <td class="tabla__contenido tabla__num">$14.747,00</td>
-                  </tr>
-                  <tr>
-                    <td class="tabla__contenido tabla__num">1069</td>
-                    <td class="tabla__contenido">Proplan Pouch Adult Cat Salmon</td>
-                    <td class="tabla__contenido tabla__editable">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="tabla__svgi" viewBox="0 0 16 16"> <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/> </svg>
-                      <input type="text" class="tabla__cant" placeholder="0">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="tabla__svgd" viewBox="0 0 16 16"> <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1h-7z"/> </svg>
-                    </td>
-                    <td class="tabla__contenido tabla__num">500</td>
-                    <td class="tabla__contenido tabla__num">$14.747,00</td>
-                    <td class="tabla__contenido tabla__num">$14.747,00</td>
-                  </tr>
-                  <tr>
-                    <td class="tabla__contenido tabla__num">1069</td>
-                    <td class="tabla__contenido">Proplan Pouch Adult Cat Salmon</td>
-                    <td class="tabla__contenido tabla__editable">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="tabla__svgi" viewBox="0 0 16 16"> <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/> </svg>
-                      <input type="text" class="tabla__cant" placeholder="0">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="tabla__svgd" viewBox="0 0 16 16"> <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1h-7z"/> </svg>
-                    </td>
-                    <td class="tabla__contenido tabla__num">500</td>
-                    <td class="tabla__contenido tabla__num">$14.747,00</td>
-                    <td class="tabla__contenido tabla__num">$14.747,00</td>
-                  </tr>
-                  <tr>
-                    <td class="tabla__contenido tabla__num">1069</td>
-                    <td class="tabla__contenido">Proplan Pouch Adult Cat Salmon</td>
-                    <td class="tabla__contenido tabla__editable">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="tabla__svgi" viewBox="0 0 16 16"> <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/> </svg>
-                      <input type="text" class="tabla__cant" placeholder="0">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="tabla__svgd" viewBox="0 0 16 16"> <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1h-7z"/> </svg>
-                    </td>
-                    <td class="tabla__contenido tabla__num">500</td>
-                    <td class="tabla__contenido tabla__num">$14.747,00</td>
-                    <td class="tabla__contenido tabla__num">$14.747,00</td>
-                  </tr>
-              </tbody>
-          </table>
+    <!--FIN FILTROS-->
+    <div class="catalogosencillo">
+      <div class="search-container">
+        <input type="text" id="search-input" class="search-input" placeholder="Buscar...">
+        <button onclick="search()" class="search-button"><i class="fas fa-search search-icon"></i></button>
+        <div class="contenedor__vista">
+          <div class="opciones__vista">
+            <p>Vista</p>
+            <img src="../MsPortal/public/img/lista-24.png" alt="" class="img__vista">
+            <img src="../MsPortal/public/img/tabla-24.png" alt="" class="img__vista">
+          </div>
         </div>
       </div>
+      <div class="contenedortabla">
+        <table class="tabla">
+          <thead class="tabla__encabezado">
+            <tr>
+              <th class="tabla__titulo tabla__media">Codigo</th>
+              <th class="tabla__titulo">Descripcion</th>
+              <th class="tabla__titulo tabla__chica">Cantidad</th>
+              <th class="tabla__titulo tabla__media">Stock</th>
+              <th class="tabla__titulo tabla__precio">Precio</th>
+              <th class="tabla__titulo tabla__importe">Importe</th>
+              <th class="tabla__titulo tabla__importe">Añadir/Quitar</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="tabla__contenido tabla__num">1069</td>
+              <td class="tabla__contenido">DogPro Sabor Mix</td>
+              <td class="tabla__contenido tabla__editable">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="tabla__svgi"
+                  viewBox="0 0 16 16">
+                  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                  <path
+                    d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                </svg>
+                <input type="text" class="tabla__cant" placeholder="0">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="tabla__svgd"
+                  viewBox="0 0 16 16">
+                  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1h-7z" />
+                </svg>
+              </td>
+              <td class="tabla__contenido tabla__num">500</td>
+              <td class="tabla__contenido tabla__num">$14.747,00</td>
+              <td class="tabla__contenido tabla__num">$14.747,00</td>
+              <td class="tabla__contenido tabla__ico">
+                <i class="fa-solid fa-cart-plus"></i>
+                <i class="fas fa-trash-alt delete-icon"></i>
+              </td>
+            </tr>
+            <tr>
+              <td class="tabla__contenido tabla__num">1069</td>
+              <td class="tabla__contenido">DogPro Sabor Mix</td>
+              <td class="tabla__contenido tabla__editable">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="tabla__svgi"
+                  viewBox="0 0 16 16">
+                  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                  <path
+                    d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                </svg>
+                <input type="text" class="tabla__cant" placeholder="0">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="tabla__svgd"
+                  viewBox="0 0 16 16">
+                  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1h-7z" />
+                </svg>
+              </td>
+              <td class="tabla__contenido tabla__num">500</td>
+              <td class="tabla__contenido tabla__num">$14.747,00</td>
+              <td class="tabla__contenido tabla__num">$14.747,00</td>
+              <td class="tabla__contenido tabla__ico">
+                <i class="fa-solid fa-cart-plus"></i>
+                <i class="fas fa-trash-alt delete-icon"></i>
+              </td>
+            </tr>
+            <tr>
+              <td class="tabla__contenido tabla__num">1069</td>
+              <td class="tabla__contenido">DogPro Sabor Mix</td>
+              <td class="tabla__contenido tabla__editable">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="tabla__svgi"
+                  viewBox="0 0 16 16">
+                  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                  <path
+                    d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                </svg>
+                <input type="text" class="tabla__cant" placeholder="0">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="tabla__svgd"
+                  viewBox="0 0 16 16">
+                  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1h-7z" />
+                </svg>
+              </td>
+              <td class="tabla__contenido tabla__num">500</td>
+              <td class="tabla__contenido tabla__num">$14.747,00</td>
+              <td class="tabla__contenido tabla__num">$14.747,00</td>
+              <td class="tabla__contenido tabla__ico">
+                <i class="fa-solid fa-cart-plus"></i>
+                <i class="fas fa-trash-alt delete-icon"></i>
+              </td>
+            </tr>
+            <tr>
+              <td class="tabla__contenido tabla__num">1069</td>
+              <td class="tabla__contenido">DogPro Sabor Mix</td>
+              <td class="tabla__contenido tabla__editable">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="tabla__svgi"
+                  viewBox="0 0 16 16">
+                  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                  <path
+                    d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                </svg>
+                <input type="text" class="tabla__cant" placeholder="0">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="tabla__svgd"
+                  viewBox="0 0 16 16">
+                  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1h-7z" />
+                </svg>
+              </td>
+              <td class="tabla__contenido tabla__num">500</td>
+              <td class="tabla__contenido tabla__num">$14.747,00</td>
+              <td class="tabla__contenido tabla__num">$14.747,00</td>
+              <td class="tabla__contenido tabla__ico">
+                <i class="fa-solid fa-cart-plus"></i>
+                <i class="fas fa-trash-alt delete-icon"></i>
+              </td>
+            </tr>
+            <tr>
+              <td class="tabla__contenido tabla__num">1069</td>
+              <td class="tabla__contenido">DogPro Sabor Mix</td>
+              <td class="tabla__contenido tabla__editable">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="tabla__svgi"
+                  viewBox="0 0 16 16">
+                  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                  <path
+                    d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                </svg>
+                <input type="text" class="tabla__cant" placeholder="0">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="tabla__svgd"
+                  viewBox="0 0 16 16">
+                  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1h-7z" />
+                </svg>
+              </td>
+              <td class="tabla__contenido tabla__num">500</td>
+              <td class="tabla__contenido tabla__num">$14.747,00</td>
+              <td class="tabla__contenido tabla__num">$14.747,00</td>
+              <td class="tabla__contenido tabla__ico">
+                <i class="fa-solid fa-cart-plus"></i>
+                <i class="fas fa-trash-alt delete-icon"></i>
+              </td>
+            </tr>
+            <tr>
+              <td class="tabla__contenido tabla__num">1069</td>
+              <td class="tabla__contenido">DogPro Sabor Mix</td>
+              <td class="tabla__contenido tabla__editable">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="tabla__svgi"
+                  viewBox="0 0 16 16">
+                  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                  <path
+                    d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                </svg>
+                <input type="text" class="tabla__cant" placeholder="0">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="tabla__svgd"
+                  viewBox="0 0 16 16">
+                  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1h-7z" />
+                </svg>
+              </td>
+              <td class="tabla__contenido tabla__num">500</td>
+              <td class="tabla__contenido tabla__num">$14.747,00</td>
+              <td class="tabla__contenido tabla__num">$14.747,00</td>
+              <td class="tabla__contenido tabla__ico">
+                <i class="fa-solid fa-cart-plus"></i>
+                <i class="fas fa-trash-alt delete-icon"></i>
+              </td>
+            </tr>
+            <tr>
+              <td class="tabla__contenido tabla__num">1069</td>
+              <td class="tabla__contenido">Proplan Pouch Adult Cat Salmon</td>
+              <td class="tabla__contenido tabla__editable">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="tabla__svgi"
+                  viewBox="0 0 16 16">
+                  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                  <path
+                    d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                </svg>
+                <input type="text" class="tabla__cant" placeholder="0">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="tabla__svgd"
+                  viewBox="0 0 16 16">
+                  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1h-7z" />
+                </svg>
+              </td>
+              <td class="tabla__contenido tabla__num">500</td>
+              <td class="tabla__contenido tabla__num">$14.747,00</td>
+              <td class="tabla__contenido tabla__num">$14.747,00</td>
+              <td class="tabla__contenido tabla__ico">
+                <i class="fa-solid fa-cart-plus"></i>
+                <i class="fas fa-trash-alt delete-icon"></i>
+              </td>
+            </tr>
+            <tr>
+              <td class="tabla__contenido tabla__num">1069</td>
+              <td class="tabla__contenido">Proplan Pouch Adult Cat Salmon</td>
+              <td class="tabla__contenido tabla__editable">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="tabla__svgi"
+                  viewBox="0 0 16 16">
+                  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                  <path
+                    d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                </svg>
+                <input type="text" class="tabla__cant" placeholder="0">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="tabla__svgd"
+                  viewBox="0 0 16 16">
+                  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1h-7z" />
+                </svg>
+              </td>
+              <td class="tabla__contenido tabla__num">500</td>
+              <td class="tabla__contenido tabla__num">$14.747,00</td>
+              <td class="tabla__contenido tabla__num">$14.747,00</td>
+              <td class="tabla__contenido tabla__ico">
+                <i class="fa-solid fa-cart-plus"></i>
+                <i class="fas fa-trash-alt delete-icon"></i>
+              </td>
+            </tr>
+            <tr>
+              <td class="tabla__contenido tabla__num">1069</td>
+              <td class="tabla__contenido">Proplan Pouch Adult Cat Salmon</td>
+              <td class="tabla__contenido tabla__editable">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="tabla__svgi"
+                  viewBox="0 0 16 16">
+                  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                  <path
+                    d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                </svg>
+                <input type="text" class="tabla__cant" placeholder="0">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="tabla__svgd"
+                  viewBox="0 0 16 16">
+                  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1h-7z" />
+                </svg>
+              </td>
+              <td class="tabla__contenido tabla__num">500</td>
+              <td class="tabla__contenido tabla__num">$14.747,00</td>
+              <td class="tabla__contenido tabla__num">$14.747,00</td>
+              <td class="tabla__contenido tabla__ico">
+                <i class="fa-solid fa-cart-plus"></i>
+                <i class="fas fa-trash-alt delete-icon"></i>
+              </td>
+            </tr>
+            <tr>
+              <td class="tabla__contenido tabla__num">1069</td>
+              <td class="tabla__contenido">Proplan Pouch Adult Cat Salmon</td>
+              <td class="tabla__contenido tabla__editable">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="tabla__svgi"
+                  viewBox="0 0 16 16">
+                  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                  <path
+                    d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                </svg>
+                <input type="text" class="tabla__cant" placeholder="0">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="tabla__svgd"
+                  viewBox="0 0 16 16">
+                  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1h-7z" />
+                </svg>
+              </td>
+              <td class="tabla__contenido tabla__num">500</td>
+              <td class="tabla__contenido tabla__num">$14.747,00</td>
+              <td class="tabla__contenido tabla__num">$14.747,00</td>
+              <td class="tabla__contenido tabla__ico">
+                <i class="fa-solid fa-cart-plus"></i>
+                <i class="fas fa-trash-alt delete-icon"></i>
+              </td>
+            </tr>
+            <tr>
+              <td class="tabla__contenido tabla__num">1069</td>
+              <td class="tabla__contenido">Proplan Pouch Adult Cat Salmon</td>
+              <td class="tabla__contenido tabla__editable">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="tabla__svgi"
+                  viewBox="0 0 16 16">
+                  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                  <path
+                    d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                </svg>
+                <input type="text" class="tabla__cant" placeholder="0">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="tabla__svgd"
+                  viewBox="0 0 16 16">
+                  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1h-7z" />
+                </svg>
+              </td>
+              <td class="tabla__contenido tabla__num">500</td>
+              <td class="tabla__contenido tabla__num">$14.747,00</td>
+              <td class="tabla__contenido tabla__num">$14.747,00</td>
+              <td class="tabla__contenido tabla__ico">
+                <i class="fa-solid fa-cart-plus"></i>
+                <i class="fas fa-trash-alt delete-icon"></i>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
   </main>
-    
-    <footer class="footer">
-      <small style=" display: inline-block">
-        © 2023 made with
-        <a target="_blank" href="http://macrosistemassrl.com.ar"> MacroSistemas S.R.L </a>
-      </small>
-      <br />
-    </footer>
-    <script src="../MsPortal/js/menu.js"></script>
-   
-  </body>
+
+  <footer class="footer">
+    <small style=" display: inline-block">
+      © 2023 made with
+      <a target="_blank" href="http://macrosistemassrl.com.ar"> MacroSistemas S.R.L </a>
+    </small>
+    <br />
+  </footer>
+  <script src="../MsPortal/js/filtros.js"></script>
+  <script src="../MsPortal/js/menu.js"></script>
+
+</body>
+
 </html>
